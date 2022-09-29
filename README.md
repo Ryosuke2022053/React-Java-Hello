@@ -1,2 +1,2 @@
 # WebSocketDemo
-JavaSpringBootでWebSocketをやってみる
+JavaSpringBootのRestAPIとReactでHelloを出力
