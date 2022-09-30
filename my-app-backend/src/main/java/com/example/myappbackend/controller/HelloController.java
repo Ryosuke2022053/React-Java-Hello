@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
+@RequestMapping("api")
 public class HelloController {
-    @GetMapping("/api")
+    @GetMapping("/demo")
     @ResponseBody
     public BirthStone getBirthStone() {
         BirthStone birthStone = new BirthStone();

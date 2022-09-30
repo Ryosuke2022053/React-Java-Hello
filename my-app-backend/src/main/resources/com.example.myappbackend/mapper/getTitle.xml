@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myappbackend.mapper.TitleMapper">
+    <select id="title" resultType="com.example.myappbackend.entity.TitleEntity">
+        SELECT id, title, content, img_path, user_id, updated_at
+        FROM totaltitle
+    </select>
+</mapper>
