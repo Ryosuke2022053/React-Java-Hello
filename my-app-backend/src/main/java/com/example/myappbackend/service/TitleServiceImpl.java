@@ -16,4 +16,9 @@ public class TitleServiceImpl implements TitleService{
     public List<Title> getTitle() {
         return titleRepository.getTitle();
     }
+
+    @Override
+    public void addTitle(Title title) {
+        titleRepository.addTitle(title);
+    }
 }
