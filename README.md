@@ -8,7 +8,9 @@
 
 ### application.propertiesの設定
 - 以下のパスに新しくファイルを作成
-  ```React-Java-Hello/my-app-backend/src/main/resources/application.properties```
+```
+React-Java-Hello/my-app-backend/src/main/resources/application.properties
+```
 
 - 各々にあったDB名、ユーザー名、パスワードを記述
 ```
