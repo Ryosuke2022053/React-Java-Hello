@@ -8,4 +8,6 @@ import java.util.List;
 @Mapper
 public interface TitleMapper {
     List<TitleEntity> title();
+
+    void addTitle(TitleEntity titleEntity);
 }
