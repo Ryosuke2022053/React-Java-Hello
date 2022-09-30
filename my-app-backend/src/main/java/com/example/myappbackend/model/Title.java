@@ -2,7 +2,7 @@ package com.example.myappbackend.model;
 
 import lombok.Data;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 public class Title {
@@ -11,4 +11,5 @@ public class Title {
     private String content;
     private String imgPath;
     private Long userId;
+    private Date updatedAt;
 }
