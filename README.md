@@ -36,3 +36,5 @@ npm start
 
 ## DB
 - Postgresqlを採用
+- 詳しくは以下のWikiを参照
+- https://github.com/Ryosuke2022053/React-Java-Hello/wiki/DB%E4%BD%9C%E6%88%90 
