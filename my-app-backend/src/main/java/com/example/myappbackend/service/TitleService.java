@@ -8,4 +8,6 @@ public interface TitleService {
     List<Title> getTitle();
 
     void addTitle(Title title);
+
+    void editTitle(Title title);
 }

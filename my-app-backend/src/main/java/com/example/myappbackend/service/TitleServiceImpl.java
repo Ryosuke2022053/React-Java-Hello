@@ -21,4 +21,9 @@ public class TitleServiceImpl implements TitleService{
     public void addTitle(Title title) {
         titleRepository.addTitle(title);
     }
+
+    @Override
+    public void editTitle(Title title) {
+        titleRepository.editTitle(title);
+    }
 }
