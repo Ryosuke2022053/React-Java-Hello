@@ -10,4 +10,6 @@ public interface TitleMapper {
     List<TitleEntity> title();
 
     void addTitle(TitleEntity titleEntity);
+
+    void editTitle(TitleEntity titleEntity);
 }

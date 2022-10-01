@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myappbackend.mapper.TitleMapper">
+    <select id="editTitle" resultType="com.example.myappbackend.entity.TitleEntity">
+        UPDATE
+            totaltitle
+        SET
+            title = #{title},
+            content = #{content},
+            img_path = #{imgPath},
+            user_id = #{userId}
+        WHERE
+            id = #{id}
+    </select>
+</mapper>
