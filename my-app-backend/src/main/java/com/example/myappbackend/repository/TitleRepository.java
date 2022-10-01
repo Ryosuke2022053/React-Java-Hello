@@ -10,4 +10,6 @@ public interface TitleRepository {
     void addTitle(Title title);
 
     void editTitle(Title title);
+
+    void deleteTitle(Long id);
 }

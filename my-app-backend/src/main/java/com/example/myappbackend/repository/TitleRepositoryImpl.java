@@ -35,4 +35,9 @@ public class TitleRepositoryImpl implements TitleRepository{
         TitleEntity titleEntity = modelMapper.map(title, TitleEntity.class);
         titleMapper.editTitle(titleEntity);
     }
+
+    @Override
+    public void deleteTitle(Long id) {
+        titleMapper.deleteTitle(id);
+    }
 }
