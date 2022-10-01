@@ -29,4 +29,10 @@ public class TitleRepositoryImpl implements TitleRepository{
         TitleEntity titleEntity = modelMapper.map(title, TitleEntity.class);
         titleMapper.addTitle(titleEntity);
     }
+
+    @Override
+    public void editTitle(Title title) {
+        TitleEntity titleEntity = modelMapper.map(title, TitleEntity.class);
+        titleMapper.editTitle(titleEntity);
+    }
 }
