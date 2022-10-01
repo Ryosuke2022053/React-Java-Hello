@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface TitleRepository {
     List<Title> getTitle();
+
+    void addTitle(Title title);
+
+    void editTitle(Title title);
 }

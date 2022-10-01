@@ -10,15 +10,26 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("api")
+@RequestMapping("/api/title")
 @RequiredArgsConstructor
 public class TitleController {
     private final TitleService titleService;
 
-    @GetMapping("/title")
+    @GetMapping("/list")
     @ResponseBody
     public List<Title> titleall(Model model) {
         List<Title> titleList = titleService.getTitle();
         return titleList;
+    }
+
+    @PostMapping("/add")
+    public void addTitle(@RequestBody Title title) {
+        System.out.println(title);
+        titleService.addTitle(title);
+    }
+
+    @PostMapping("edit")
+    public void editTitle(@RequestBody Title title) {
+        titleService.editTitle(title);
     }
 }

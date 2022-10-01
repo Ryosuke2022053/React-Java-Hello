@@ -23,4 +23,16 @@ public class TitleRepositoryImpl implements TitleRepository{
                 .map(model -> modelMapper.map(model, Title.class))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public void addTitle(Title title) {
+        TitleEntity titleEntity = modelMapper.map(title, TitleEntity.class);
+        titleMapper.addTitle(titleEntity);
+    }
+
+    @Override
+    public void editTitle(Title title) {
+        TitleEntity titleEntity = modelMapper.map(title, TitleEntity.class);
+        titleMapper.editTitle(titleEntity);
+    }
 }
