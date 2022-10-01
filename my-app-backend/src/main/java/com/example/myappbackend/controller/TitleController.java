@@ -27,4 +27,9 @@ public class TitleController {
         System.out.println(title);
         titleService.addTitle(title);
     }
+
+    @PostMapping("edit")
+    public void editTitle(@RequestBody Title title) {
+        titleService.editTitle(title);
+    }
 }
