@@ -28,8 +28,14 @@ public class TitleController {
         titleService.addTitle(title);
     }
 
-    @PostMapping("edit")
+    @PostMapping("/edit")
     public void editTitle(@RequestBody Title title) {
         titleService.editTitle(title);
+    }
+
+    @PostMapping("/delete")
+    public void deleteTitle(@RequestParam(name = "id") Long id) {
+        System.out.println(id);
+        titleService.deleteTitle(id);
     }
 }
