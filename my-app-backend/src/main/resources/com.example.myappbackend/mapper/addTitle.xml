@@ -6,6 +6,6 @@
     <select id="addTitle" resultType="com.example.myappbackend.entity.TitleEntity">
         INSERT INTO totaltitle (
         title, content, img_path, user_id)
-        VALUES ( #{title}, #{content}, #{imgPath}, #{userId});
+        VALUES ( #{title}, #{content}, #{imgPath}, #{userId})
     </select>
 </mapper>
