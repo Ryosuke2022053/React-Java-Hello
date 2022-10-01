@@ -12,4 +12,6 @@ public interface TitleMapper {
     void addTitle(TitleEntity titleEntity);
 
     void editTitle(TitleEntity titleEntity);
+
+    void deleteTitle(Long id);
 }
